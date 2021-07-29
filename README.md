@@ -77,7 +77,7 @@ fields: {
 ```
 
 ## Flows
-This version of the IDS Gateway only works with an SQL database to store the resources that are then registered with the DataSpaceConnector and Broker. We recommend using the IDS-Gateway in combination with the [IDS-SQL Adapter](HIER SPÄTER LINK FÜR IDS-SQL-ADAPTER) which is a variation of the standard OIH-SQL Adapter [OIH-SQL Adapter](https://github.com/openintegrationhub/sql-adapter).
+This version of the IDS Gateway only works with an SQL database to store the resources that are then registered with the DataSpaceConnector and Broker. We recommend using the IDS-Gateway in combination with the [IDS-SQL Adapter](https://github.com/openintegrationhub/IDS-SQL-Adapter) which is a variation of the standard OIH-SQL Adapter [OIH-SQL Adapter](https://github.com/openintegrationhub/sql-adapter).
 
 With the triggers and actions described above it is possible to describe each row of data from any source with an uid and save it in an SQL database. This uid is then registered with the IDS DataSpaceConnector and Broker by using the `registerRessource.js` function.
 - Flow 1

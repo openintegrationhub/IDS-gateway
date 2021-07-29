@@ -1,0 +1,35 @@
+{
+   "title":"IDS Gateway",
+   "description":"OIH IDS Gateway",
+   "docsUrl":"",
+   "buildType":"docker",
+   "credentials":{
+      "fields":{
+      }
+   },
+   "triggers":{
+      "getRessourceQuery":{
+         "title":"Create an Database Query by the webhook input.",
+         "description":"Create an Database Query by the webhook input (uid of the ressources)",
+         "type":"polling",
+         "main":"./lib/triggers/getRessourceQuery.js"
+      }
+   },
+   "actions":{
+      "cacheData":{
+         "title":"Cache Data as a JSON-Object",
+         "description":"The Data will be save in a userdefined Folder as JSON.",
+         "main":"./lib/actions/cacheData.js"
+      },
+      "postIDS": {
+         "title": "POST request to IDS",
+         "description": "Performs a POST request to the IDS webhook",
+         "main": "./lib/actions/postIDS.js"
+      },
+      "registerRessource": {
+         "title": "Register the incoming data.",
+         "description":"Register the incoming data as Ressource on the Dataspace Connector and the IDS Broker",
+         "main": "./lib/actions/registerRessource.js"
+       }
+   }
+}

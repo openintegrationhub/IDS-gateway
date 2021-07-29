@@ -240,7 +240,7 @@ The second flow is webhook-based and triggered by a GET request that contains th
 }
 ```
 **Overview of OIH-IDS communication and data transfer**
-![Overview](OIH-Connector/ids-adapter/docs/overview.png)
+![Overview](/docs/overview.png)
 
 ## License
 
